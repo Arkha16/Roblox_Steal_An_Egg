@@ -1,1 +1,104 @@
+body {
+    margin: 0;
+    padding: 30;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background: linear-gradient(135deg, #87ceeb, #d8b4fe);
+    color:  #333;
+}
 
+h2 {
+    font-size: 36px;
+    color:  white;
+    margin-bottom:  10px;
+
+
+    text-shadow: 3px 3px 5px #555;
+
+}
+
+p {
+   max-width: 700px;
+   margin: 0 auto 30px;
+   padding: 15px;
+
+   background-color: rgba(255, 255, 255, 0.8);
+   border-radius: 15px;
+
+   font-size: 18px;
+   line-height: 1.6;
+}
+
+img {
+    width: 300px;
+    height: 200px;
+
+    object-fit: cover;
+
+    margin: 10px;
+    border-radius: 20px;
+
+    box-shadow: 0 8px 15px rgba(0, 0, 0 , 0.25);
+
+    transition: 0.3;
+
+    cursor: pointer;
+}
+
+img:hover {
+    transform: scale(1.05) rotate(1deg);
+
+    box-shadow: 0 12px 25px rgba(0, 0, 0 , 0.35);
+}
+/* Kotak informasi */
+.info {
+    max-width: 700px;
+    margin: 0 auto 30px;
+    padding: 20px;
+
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 15px;
+
+    font-size: 18px;
+    line-height: 1.6;
+
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+}
+
+/* Paragraf di dalam kotak */
+.info p {
+    margin: 0 0 10px;
+}
+
+/* List */
+.info ul {
+    text-align: left;
+    margin: 10px 0 0;
+}
+
+/* Item list */
+.info li {
+    margin: 8px 0;
+}
+
+.bounce{
+    animation: bounce 0.7 ease;
+}
+
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(0) scale(1);
+}
+
+30% {
+  transform: translateY(-40px) scale(1.05);
+}
+
+50% {
+    transform: translateY(0) scale(0.95);
+}
+
+70% {
+    transform: translateY(-15px);
+}
+}
